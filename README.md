@@ -3,13 +3,21 @@
 ROS Jazzy robot programming exam with Gazebo simulation, keyboard driving,
 obstacle-triggered command replay, and a C++ obstacle monitor.
 
-## Get the project
+## Clone the repository
 
-The simulator is included as a Git submodule:
+Clone the project and its simulator submodule together:
 
 ```bash
 git clone --recurse-submodules https://github.com/Matt98x/ros2_2026_exam.git
 cd ros2_2026_exam
+```
+
+If you already cloned the repository without `--recurse-submodules`, download
+the simulator from inside the project folder:
+
+```bash
+cd ros2_2026_exam
+git submodule update --init --recursive
 ```
 
 ## Start with Docker and Terminator
