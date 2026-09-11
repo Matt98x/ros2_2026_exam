@@ -1,0 +1,5 @@
+---
+bool success
+uint32 sample_count
+float64 average_linear
+float64 average_angular

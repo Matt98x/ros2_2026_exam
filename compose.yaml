@@ -1,0 +1,24 @@
+services:
+  robeng:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: robot-programming-dev:local
+    platform: linux/amd64
+    user: root
+    network_mode: host
+    init: true
+    stdin_open: true
+    tty: true
+    environment:
+      DISPLAY: "${DISPLAY:-:0}"
+      SSH_DISPLAY: "${DISPLAY:-:0}"
+      QT_QPA_PLATFORM: "xcb"
+      XAUTHORITY: "/tmp/.Xauthority"
+      LIBGL_ALWAYS_SOFTWARE: "1"
+    volumes:
+      - "${XAUTHORITY:-${HOME}/.Xauthority}:/tmp/.Xauthority:ro"
+      - "/tmp/.X11-unix:/tmp/.X11-unix:rw"
+      - ".:/home/ubuntu/ros_ws/src"
+    working_dir: /home/ubuntu/ros_ws/src
+    command: ["sleep", "infinity"]

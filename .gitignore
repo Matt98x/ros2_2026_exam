@@ -1,0 +1,16 @@
+# ROS build output
+build/
+install/
+log/
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Local environment and editor files
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+.DS_Store
