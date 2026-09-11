@@ -2,7 +2,7 @@
 <package format="3">
   <name>ros_exam</name>
   <version>0.1.0</version>
-  <description>Interactive robot driving with laser-triggered checkpoint recovery.</description>
+  <description>Interactive robot driving with laser-triggered checkpoint recovery for robot programming exam.</description>
   <maintainer email="matt@example.com">Matt</maintainer>
   <license>Apache-2.0</license>
   <buildtool_depend>ament_cmake</buildtool_depend>
