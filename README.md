@@ -18,6 +18,8 @@ Run from the project directory on a Linux host with Docker Compose and an active
 X11 graphical session:
 
 ```bash
+xhost +si:localuser:root
+
 docker compose build robeng
 docker compose up -d robeng
 docker compose exec robeng robot-terminals
